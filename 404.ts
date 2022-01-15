@@ -1,6 +1,6 @@
-export default (ctx: any) => {
-    ctx.response.status = 404;
-    ctx.response.body = {
-        error: "Not Found"
-    }
-}
+export default ({ response }: { response: any }) => {
+  response.status = 404;
+  response.body = {
+    error: "Not Found",
+  };
+};
